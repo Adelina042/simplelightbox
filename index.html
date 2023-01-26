@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple lightbox</title>
+    <link rel="stylesheet" href="libs/simple-lightbox/simple-lightbox.css">
+    <link rel="stylesheet" href="style.css">
+
+        <style>
+        img {
+          border: 1px solid rgb(231, 19, 19);
+          border-radius: 4px;
+          padding: 5px;
+          width: 150px;
+        }
+        
+        img:hover {
+          box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+        }
+        </style>
+</head>
+<body>
+    <div class="gallery">
+        <a href="images/1920-2.jpg"><img src="images/1920-2.jpg" alt="" title=""/></a>
+        <a href="images/katt.jpg"><img src="images/katt.jpg" alt="" title="Beautiful Image"/></a>
+    </div>
+
+    <script src="libs/simple-lightbox/simple-lightbox.js"></script>
+    <script>
+        let lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+    </script>
+</body>
+</html>
